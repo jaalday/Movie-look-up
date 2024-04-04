@@ -6,8 +6,8 @@ const MovieData = ({ searchValue }) => {
   const [data, setData] = useState([]);
 
   const fetchData = async (searchValue) => {
-    const url = `https://www.omdbapi.com/?s=${searchValue}&apikey=`;
-    const apiData = await fetch(url).then((response) => response.json());
+    const url2 = `https://www.omdbapi.com/?s=${searchValue}&apikey=`;
+    const apiData = await fetch(url2).then((response) => response.json());
     console.log("data: ", apiData);
     setData(apiData.Search);
   };
