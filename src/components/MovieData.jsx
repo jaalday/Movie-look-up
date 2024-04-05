@@ -9,7 +9,7 @@ const MovieData = ({ searchValue }) => {
 
   const fetchData = async (searchValue) => {
     const apikey = {apikey}
-    const url2 = `https://www.omdbapi.com/?s=${searchValue}&apikey=${apikey}`;
+    const url2 = `https://www.omdbapi.com/?s=${searchValue}&apikey=34535333`;
     const apiData = await fetch(url2).then((response) => response.json());
     console.log("data: ", apiData);
     setData(apiData.Search);
